@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{gensymb}
+
+\name{Michael Bella} % Your name
+\address{88 E. San Fernando St Unit 711, San Jose, CA 95120} % Your address
+\address{(408)~$\cdot$~717~$\cdot$~0367 \\ michael.j.bella@gmail.com} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+
+\begin{rSubsection}{KLA-Tencor}{December 2011 - Present}{Electrical Engineer}{Santa Clara, CA}
+
+\begin{rWorkProject}{350\celsius \space Calibration System}
+\item Rewired an existing high temperature oven to be controlled by a National Instruments CompactFieldPoint.
+\item Tuned cascaded control loops to bring the isothermal chamber up to each temperature set point with minimal overshoot.
+\item Designed a lump element model of the inductive wafer charging system in order to implement a simulated wafer communication system.
+%\item Designed an interface board for use in the calibration process of these High Temperature Wafers
+\end{rWorkProject}
+
+\begin{rWorkProject}{New Sensor Project}
+\item Modified existing wafer code base to work with new types of sensors.
+
+\item Tested modified code to ensure that all low power requirements are met.
+\item Wrote PC software to launch wafer missions, and to retrieve data from these new sensors.
+\item Designed custom data processing software in Python to support data driven development of new sensor platforms.
+\end{rWorkProject}
+
+\begin{rWorkProject}{FOUP Improvments}
+\item Designed an improved detector circuit to recover the communication signal from our wafers
+\item 
+\end{rWorkProject}
+
+\item Designed many different automated test and measurement applications in LabView.
+\item Wrote LabView software and designed triggering system to capture simultaneous data with two spectrometers.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{KLA-Tencor Internship}{June 2005 - December 2011}{Electrical Engineer}{San Jose, CA}
+\item Wrote automated test and measurement applications in LabView for a wide range of projects.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages & Embedded C, LabView, Python, C/C++  \\
+Tools & Eclipse, git, SVN, Code Composer Studio, IAR, Spice, AWR Microwave Office \\
+Design Experience & Low Power Embedded Systems, RF Matching Networks \& Amplifiers\\
+ & Analog Signal Processing, High Precision Analog Measurement, SMPS Design\\
+
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf San Jose State University} \hfill {\em December 2011} \\ 
+B.S. in Electrical Engineering \\
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
