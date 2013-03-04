@@ -126,12 +126,13 @@
 \newenvironment{rWorkProject}[1]{ % 4 input arguments - company name, year(s) employed, job title and location
  {\bf{--} #1} %\hfill {#2} % Bold Project name
   %\smallskip
-  \begin{list}{$\cdot$}{\leftmargin=3em} % \cdot used for bullets, no indentation
+  \begin{list}{$\cdot$}{\leftmargin=2em} % \cdot used for bullets, some indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
   \vspace{0.5em} % Some space after the list of bullet points
 }
+
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
 \def\namesize{\huge} % Size of the name at the top of the document

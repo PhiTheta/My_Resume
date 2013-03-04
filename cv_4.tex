@@ -52,9 +52,17 @@
 \item Hand wired interface board prototypes to enable the test and calibration of these wafer prototypes
 \end{rWorkProject}
 
-\begin{rWorkProject}{New Sensor Project}
+\begin{rWorkProject}{New Sensorised Wafer Project}
 \item Modified existing wafer code base to work with new types of sensors.
-\item Tested the modified code to ensure that all low power requirements are met.
+\begin{itemize}
+\itemsep -0.5em \vspace{-0.5em}
+\renewcommand{\labelitemi}{-}
+\item Rewrote measurement subsystem to interface with the new sensor type
+\item Redesigned data storage format to support the new sensor
+\item Fully tested all code changes against existing low power specifications for the product family.
+\item Rewrote portions of existing Mfg software to support calibration
+\end{itemize}
+
 \item Wrote PC software to launch wafer missions, and to retrieve data from these new sensors.
 \item Designed custom data processing software in Python to support data driven development of new sensor platforms.
 \end{rWorkProject}
