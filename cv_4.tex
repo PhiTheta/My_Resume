@@ -21,11 +21,11 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{gensymb}
 
 \name{Michael Bella} % Your name
-\address{88 E. San Fernando St Unit 711, San Jose, CA 95120} % Your address
+\address{88 E. San Fernando St Unit 711, San Jose, CA 95113} % Your address
 \address{(408)~$\cdot$~717~$\cdot$~0367 \\ michael.j.bella@gmail.com} % Your phone number and email
 
 \begin{document}
@@ -36,37 +36,48 @@
 
 \begin{rSection}{Work Experience}
 
-\begin{rSubsection}{KLA-Tencor}{December 2011 - Present}{Electrical Engineer}{Santa Clara, CA}
+\begin{rSubsection}{KLA-Tencor}{December 2011 - Present}{Electrical Engineer}{Milpitas, CA}
 
 \begin{rWorkProject}{350\celsius \space Calibration System}
-\item Rewired an existing high temperature oven to be controlled by a National Instruments CompactFieldPoint.
-\item Tuned cascaded control loops to bring the isothermal chamber up to each temperature set point with minimal overshoot.
+\item Rewired existing high temperature oven to be controlled by a National Instruments Compact FieldPoint.
+\item Developed state chart for control of both oven systems
+\item Tuned cascaded control loops to bring the calibration system up to each temperature set point with minimal overshoot.
+\end{rWorkProject}
+
+\begin{rWorkProject}{High Temperature Wireless Wafer}
+\item Wrote LabView which automatically tests all possible failure modes of a wafer substrate with thin-film aluminum traces.
+\item Wrote LabView application to use an Agilent 3490a as a curve tracer to manually diagnose faults in substrates
 \item Designed a lump element model of the inductive wafer charging system in order to implement a simulated wafer communication system.
-%\item Designed an interface board for use in the calibration process of these High Temperature Wafers
+\item Hand wired prototype of a nanoamp current measurement fixture.
+\item Hand wired interface board prototypes to enable the test and calibration of these wafer prototypes
 \end{rWorkProject}
 
 \begin{rWorkProject}{New Sensor Project}
 \item Modified existing wafer code base to work with new types of sensors.
-
-\item Tested modified code to ensure that all low power requirements are met.
+\item Tested the modified code to ensure that all low power requirements are met.
 \item Wrote PC software to launch wafer missions, and to retrieve data from these new sensors.
 \item Designed custom data processing software in Python to support data driven development of new sensor platforms.
 \end{rWorkProject}
 
 \begin{rWorkProject}{FOUP Improvments}
-\item Designed an improved detector circuit to recover the sensor wafer's data stream
-\item Charactized 
+%\item Designed an improved detector circuit to recover the sensor wafer's data stream
+\item Designed a circuit to recover the wafer communication signal from the envelope detector with improved sensitivity over the existing design.
+\item Characterized the improved wafer communication system performance.
 \end{rWorkProject}
 
+\smallskip
 \item Designed many different automated test and measurement applications in LabView.
-\item Wrote LabView software and designed triggering system to capture simultaneous data with two spectrometers.
+\item Wrote LabView software to acquire and process data from two spectrometers.
+\item Designed triggering system to enable the simultaneous capture data capture with two spectrometers.
 \end{rSubsection}
 
 %------------------------------------------------
 
-\begin{rSubsection}{KLA-Tencor Internship}{June 2005 - December 2011}{Electrical Engineer}{San Jose, CA}
-\item Wrote automated test and measurement applications in LabView for a wide range of projects.
-\item Characterized the magnetically coupled wafer communication system 
+\begin{rSubsection}{KLA-Tencor Internship}{June 2005 - December 2011}{Electrical Engineer}{Milpitas, CA}
+%\item Wrote automated test and measurement applications in LabView for a wide range of projects.
+\item Wrote automated capacitor tester, wireless communication system tester, 
+\item Characterized the magnetically coupled wafer communication system
+\item Performed PCB/PCA diagnostic work, failure analysis, rework of SMD and through hole components.
 \end{rSubsection}
 
 \end{rSection}
@@ -79,10 +90,11 @@
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
 Programming Languages & Embedded C, LabView, Python, C/C++  \\
-Tools & Eclipse, git, SVN, Code Composer Studio, IAR, Spice, AWR Microwave Office \\
+Tools & Eclipse, git, SVN, Code Composer Studio, IAR, Spice, AWR Microwave Office, \\
+ & CADSoft Eagle\\
 Design Experience & Low Power Embedded Systems, RF Matching Networks \& Amplifiers\\
  & Analog Signal Processing, High Precision Analog Measurement, SMPS Design\\
-
+Lab Skills & SMD Soldering, Wiring harness construction, PCA Bringup and Debug\\
 \end{tabular}
 
 \end{rSection}

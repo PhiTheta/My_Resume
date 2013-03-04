@@ -89,7 +89,7 @@
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   \sectionskip
-  \vspace{2em} % Some space after the list of bullet points
+  \vspace{0em} % Some space after the list of bullet points
   \MakeUppercase{\bf #1} % Section title
   \sectionlineskip
   %\hrule % Horizontal line
@@ -116,7 +116,7 @@
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  \vspace{0.25em} % Some space after the list of bullet points
 }
 
 %----------------------------------------------------------------------------------------
@@ -125,7 +125,7 @@
 
 \newenvironment{rWorkProject}[1]{ % 4 input arguments - company name, year(s) employed, job title and location
  {\bf{--} #1} %\hfill {#2} % Bold Project name
-  \smallskip
+  %\smallskip
   \begin{list}{$\cdot$}{\leftmargin=3em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
