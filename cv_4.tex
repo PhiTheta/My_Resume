@@ -21,12 +21,12 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.75in,top=0.7in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \usepackage{gensymb}
 
 \name{Michael Bella} % Your name
 \address{88 E. San Fernando St Unit 711, San Jose, CA 95113} % Your address
-\address{(408)~$\cdot$~717~$\cdot$~0367 \\ michael.j.bella@gmail.com} % Your phone number and email
+\address{408~-~717~-~0367 \\ michael.j.bella@gmail.com} % Your phone number and email
 
 \begin{document}
 
@@ -83,7 +83,14 @@
 
 \begin{rSubsection}{KLA-Tencor Internship}{June 2005 - December 2011}{Electrical Engineer}{Milpitas, CA}
 %\item Wrote automated test and measurement applications in LabView for a wide range of projects.
-\item Wrote automated capacitor tester, wireless communication system tester, 
+\item Developed LabView code for a wide range different projects
+\begin{itemize}
+\itemsep -0.5em \vspace{-0.5em}
+\renewcommand{\labelitemi}{-}
+\item Automated capacitor tester
+\item Wireless communication system tester
+\item Synchronous serial link to a custom embedded sensor system
+\end{itemize}
 \item Characterized the magnetically coupled wafer communication system
 \item Performed PCB/PCA diagnostic work, failure analysis, rework of SMD and through hole components.
 \end{rSubsection}
@@ -93,7 +100,7 @@
 %----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
-
+\pagebreak
 \begin{rSection}{Technical Strengths}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
@@ -103,6 +110,7 @@ Tools & Eclipse, git, SVN, Code Composer Studio, IAR, Spice, AWR Microwave Offic
 Design Experience & Low Power Embedded Systems, RF Matching Networks \& Amplifiers\\
  & Analog Signal Processing, High Precision Analog Measurement, SMPS Design\\
 Lab Skills & SMD Soldering, Wiring harness construction, PCA Bringup and Debug\\
+ & Prototyping, Build designs from print
 \end{tabular}
 
 \end{rSection}
