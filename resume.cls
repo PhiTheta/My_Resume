@@ -124,7 +124,7 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rWorkProject}[1]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf{--} #1} %\hfill {#2} % Bold Project name
+ {\bf #1} %\hfill {#2} % Bold Project name
   %\smallskip
   \begin{list}{$\cdot$}{\leftmargin=2em} % \cdot used for bullets, some indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
