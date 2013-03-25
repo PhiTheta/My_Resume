@@ -91,7 +91,7 @@
   \sectionskip
   \vspace{0em} % Some space after the list of bullet points
   \MakeUppercase{\bf #1} % Section title
-  \sectionlineskip
+  %\sectionlineskip
   %\hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{1.5em} % Margin within the section
