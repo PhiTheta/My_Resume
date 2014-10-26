@@ -137,10 +137,10 @@
 %	Personal/Student PROJECT FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{rProject}[1]{
- {\bf #1} 
+\newenvironment{rProject}[2]{
+ {\bf #1} \hfill {\em #2}
   %\smallskip
-  \begin{list}{-}{\leftmargin=2em} % \cdot used for bullets, some indentation
+  \begin{list}{-}{\leftmargin=2em} % dash used for bullets, some indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
