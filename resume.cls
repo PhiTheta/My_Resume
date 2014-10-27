@@ -88,8 +88,8 @@
 
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
-  \sectionskip
-  \vspace{0em} % Some space after the list of bullet points
+  %\sectionskip
+  %\vspace{0em} % Some space after the list of bullet points
   \MakeUppercase{\bf #1} % Section title
   %\sectionlineskip
   %\hrule % Horizontal line
@@ -111,7 +111,7 @@
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
   {\em #3} \hfill {\em #4} % Italic job title and location
-  }\smallskip
+  }%\smallskip
   \begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
@@ -130,7 +130,7 @@
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  %\vspace{-0.5em} % Some space after the list of bullet points
 }
 
 %----------------------------------------------------------------------------------------
@@ -152,5 +152,5 @@
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
 \def\sectionlineskip{\medskip} % The space above the horizontal line for each section 
 \def\nameskip{\bigskip} % The space after your name at the top
-\def\sectionskip{\medskip} % The space after the heading section
-%\def\sectionskip{\smallskip} % The space after the heading section
+%\def\sectionskip{\medskip} % The space after the heading section
+\def\sectionskip{\smallskip} % The space after the heading section
