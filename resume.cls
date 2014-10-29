@@ -116,13 +116,12 @@
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.25em} % Some space after the list of bullet points
+  %\vspace{0.25em} % Some space after the list of bullet points
 }
 
 %----------------------------------------------------------------------------------------
 %	WORK PROJECT FORMATTING
 %----------------------------------------------------------------------------------------
-
 \newenvironment{rWorkProject}[1]{ % 4 input arguments - company name, year(s) employed, job title and location
  {\bf #1} %\hfill {#2} % Bold Project name
   %\smallskip
@@ -136,7 +135,6 @@
 %----------------------------------------------------------------------------------------
 %	Personal/Student PROJECT FORMATTING
 %----------------------------------------------------------------------------------------
-
 \newenvironment{rProject}[2]{
  {\bf #1} \hfill {\em #2}
   %\smallskip

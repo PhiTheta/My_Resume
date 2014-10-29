@@ -21,7 +21,7 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.7in,top=0.4in,right=0.7in,bottom=0.5in]{geometry} % Document margins
+\usepackage[left=0.7in,top=0.4in,right=0.7in,bottom=0.4in]{geometry} % Document margins
 \usepackage{gensymb}
 \usepackage{needspace}
 
@@ -38,18 +38,18 @@
 \begin{rSection}{Technical Strengths}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages & Python, C, LabView  \smallskip \\
+Programming Languages & Python, C, LabView, Veralog \smallskip \\
 
 Software Tools & Eclipse, Git, SVN, Code Composer Studio, IAR, Spice\\ 
  & AWR Microwave Office, CADSoft Eagle, Matlab \smallskip \\
 
-Design Experience & Low Power Embedded Systems, RF Matching Networks \& Amplifiers\\
- & Analog Design, High Precision Analog Measurement, SMPS Design \smallskip \\
+Design Experience & Low Power Embedded Systems, High Precision Analog Measurement \\ 
+ & Analog Design, SMPS Design, RF Matching \& Amplifiers \smallskip \\
  
 Lab Skills & Root Cause Analysis, SMD Soldering, Wiring harness construction,\\
-& PCA Bringup and Debugging, Prototyping, Build designs from print\smallskip \\
+ & PCA Bringup and Debugging, Prototyping, Build designs from print\smallskip \\
  
-Other Technical Experience &  Low Power System Design, I2C, SPI, JTAG, Boundary Scan \\
+Other Technical Experience & I2C, SPI, JTAG, Boundary Scan \\
 \end{tabular}
 
 \end{rSection}
@@ -76,14 +76,15 @@ Other Technical Experience &  Low Power System Design, I2C, SPI, JTAG, Boundary 
 %----------------------------------------------------------------------------------------
 
 \begin{rSubsection}{KLA-Tencor -- SensArray Group}{December 2011 - October 2013}{Electrical Engineer}{Milpitas, CA}
-\item Developed production code for ultra low power MSP430 based systems.
+\item Developed production code for ultra low power MSP430 based systems targeted at semiconductor metrology.
 \begin{itemize}
 \itemsep -0.5em \vspace{-0.5em}
 \renewcommand{\labelitemi}{-}
-\item Designed embedded systems to serve as platforms for new sensor technologies.
+\item Designed low power embedded systems to serve as platforms for new sensor technologies.
 \item Adapt existing measurement system architectures for use with new sensors.
 \item Modify existing embedded system code bases to work with new types of sensors.
-\item Characterize and test RFID systems for use in ultra low power embedded applications.
+\item Worked with materials engineers, physicists, and computer engineers to deliver cutting edge solutions.
+\item Characterized, tested, and designed RFID systems for use in ultra low power embedded applications.
 \end{itemize}
 
 \item Designed test fixtures for both production and R\&D use.
@@ -109,23 +110,24 @@ Other Technical Experience &  Low Power System Design, I2C, SPI, JTAG, Boundary 
 %----------------------------------------------------------------------------------------
 \pagebreak[3]
 \begin{rSection}{Personal \& Student Projects}
-\vspace{-0.5em}
-\begin{rProject}{Bike Light}{}
-\item Designed and programmed bikelight controller to perform battery monitoring and control RGB LED arrays.
-\item Calculated power budget, and selected appropriate LED drivers for my application.
-\end{rProject}
-\vspace{-0.5em}
 
+\vspace{-0.5em}
 \begin{rProject}{Kite Control System for Wind Power Generation}{2013 - Present}
 \item Started this project as part of at team at the first Makathon competition (www.makathon.org)
 \item Designed rigging to control power kite lines 
-\item Developing python code to detect the kite with a webcam using openCV, and command a Logosol motor controller.
+\item Developing python code to detect a kite using a webcam and openCV while commanding a Logosol motor controller for steering.
+\end{rProject}
+
+\vspace{-0.5em}
+\begin{rProject}{Bike Light}{2012}
+\item Designed and programmed a bikelight controller to perform battery monitoring and control RGB LED arrays.
+\item Calculated power budget, and selected appropriate LED drivers for my application.
 \end{rProject}
 \vspace{-0.5em}
 
 \begin{rProject}{SJSU Formula Hybrid Vehicle Team}{2010 - 2011}
 \item Developed firmware for a PIC based battery management system.
-\item Helped teammates debug issues with their switching power coverter.
+\item Helped teammates debug issues with their high power switching coverter.
 \end{rProject}
 \end{rSection}
 
