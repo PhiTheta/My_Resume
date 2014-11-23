@@ -111,12 +111,12 @@
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
   {\em #3} \hfill {\em #4} % Italic job title and location
-  }%\smallskip
+  }\smallskip
   \begin{list}{-}{\leftmargin=2em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  %\vspace{0.25em} % Some space after the list of bullet points
+  \vspace{0.5em} % Some space after the list of bullet points
 }
 
 % No DASH!!!
@@ -125,12 +125,12 @@
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
   {\em #3} \hfill {\em #4} % Italic job title and location
-  }%\smallskip
+  }\smallskip
   \begin{list}{}{\leftmargin=0em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  %\vspace{0.25em} % Some space after the list of bullet points
+  \vspace{0.5em} % Some space after the list of bullet points
 }
 
 
@@ -139,12 +139,12 @@
 %----------------------------------------------------------------------------------------
 \newenvironment{rWorkProject}[1]{ % 4 input arguments - company name, year(s) employed, job title and location
  {\bf #1} %\hfill {#2} % Bold Project name
-  %\smallskip
+  \smallskip
   \begin{list}{}{\leftmargin=1em} % \cdot used for bullets, some indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  %\vspace{-0.5em} % Some space after the list of bullet points
+  \vspace{0.5em} % Some space after the list of bullet points
 }
 
 %----------------------------------------------------------------------------------------
@@ -152,7 +152,7 @@
 %----------------------------------------------------------------------------------------
 \newenvironment{rProject}[2]{
  {\bf #1} \hfill {\em #2}
-  %\smallskip
+  \smallskip
   \begin{list}{-}{\leftmargin=2em} % dash used for bullets, some indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
@@ -163,7 +163,7 @@
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
 \def\namesize{\huge} % Size of the name at the top of the document
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
-\def\sectionlineskip{\medskip} % The space above the horizontal line for each section 
+\def\sectionlineskip{\smallskip} % The space above the horizontal line for each section 
 \def\nameskip{\bigskip} % The space after your name at the top
 %\def\sectionskip{\medskip} % The space after the heading section
 \def\sectionskip{\smallskip} % The space after the heading section
