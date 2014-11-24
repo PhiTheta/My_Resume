@@ -167,3 +167,5 @@
 \def\nameskip{\bigskip} % The space after your name at the top
 %\def\sectionskip{\medskip} % The space after the heading section
 \def\sectionskip{\smallskip} % The space after the heading section
+\def\ssquish{\vspace{-0.25em}}
+
