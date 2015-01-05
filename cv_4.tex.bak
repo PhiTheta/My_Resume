@@ -118,7 +118,7 @@ Programming Languages & Python, C, LabView \smallskip \\
 \end{rProject}
 
 \ssquish
-\begin{rProject}{Bike Light - 1000 lm Headlamp and RGB Tail Lamp}{2012}
+\begin{rProject}{Bike Light - 1000 lm Headlamp and RGB Taillamp}{2012}
 \item Designed a controller using an MSP430 MCU to manage the battery and control the LEDs.
 \item Calculated power budget and selected appropriate LED drivers for my application.
 \end{rProject}
