@@ -20,7 +20,7 @@
 
 \ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
 
-\LoadClass[10pt,letterpaper]{article} % Font size and paper type
+\LoadClass[11pt,letterpaper]{article} % Font size and paper type
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
@@ -88,10 +88,10 @@
 
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
-  %\sectionskip
+  \sectionskip
   %\vspace{0em} % Some space after the list of bullet points
   \MakeUppercase{\bf #1} % Section title
-  %\sectionlineskip
+  \sectionlineskip
   %\hrule % Horizontal line
   \begin{list}{$\cdot$}{ % List for each individual item in the section
     \setlength{\leftmargin}{1.5em} % Margin within the section
@@ -139,7 +139,7 @@
 %----------------------------------------------------------------------------------------
 \newenvironment{rWorkProject}[1]{ % 1 input argument - Project Name
  {\item #1} % Make it a list item in the parent list
-  \smallskip
+  %\smallskip
   \begin{itemize}{\leftmargin=1em} % dash used for bullets, some indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
    \renewcommand{\labelitemi}{-}
@@ -153,12 +153,13 @@
 %----------------------------------------------------------------------------------------
 \newenvironment{rProject}[2]{
  {\bf #1} \hfill {\em #2}
-  \smallskip
+  \pagebreak[2]
+  %\smallskip
   \begin{list}{-}{\leftmargin=2em} % dash used for bullets, some indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  %\vspace{0.5em} % Some space after the list of bullet points
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
