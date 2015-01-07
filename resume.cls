@@ -137,13 +137,14 @@
 %----------------------------------------------------------------------------------------
 %	WORK PROJECT FORMATTING
 %----------------------------------------------------------------------------------------
-\newenvironment{rWorkProject}[1]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} %\hfill {#2} % Bold Project name
+\newenvironment{rWorkProject}[1]{ % 1 input argument - Project Name
+ {\item #1} % Make it a list item in the parent list
   \smallskip
-  \begin{list}{}{\leftmargin=1em} % \cdot used for bullets, some indentation
+  \begin{itemize}{\leftmargin=1em} % dash used for bullets, some indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+   \renewcommand{\labelitemi}{-}
   }{
-  \end{list}
+  \end{itemize}
   \vspace{0.5em} % Some space after the list of bullet points
 }
 
