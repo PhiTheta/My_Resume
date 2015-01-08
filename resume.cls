@@ -28,6 +28,8 @@
 
 \pagestyle{empty} % Suppress page numbers
 
+\renewcommand*{\familydefault}{\rmdefault}
+
 %----------------------------------------------------------------------------------------
 %	HEADINGS COMMANDS: Commands for printing name and address
 %----------------------------------------------------------------------------------------
