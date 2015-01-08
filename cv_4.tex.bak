@@ -21,7 +21,7 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry} % Document margins
+\usepackage[left=0.5in,top=0.45in,right=0.5in,bottom=0.45in]{geometry} % Document margins
 \usepackage{gensymb}
 \usepackage{needspace}
 
@@ -55,65 +55,75 @@ Programming Languages & Python, Matlab, C, LabView \smallskip \\
 \end{tabular}
 
 \end{rSection}
-\medskip
+\smallskip
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 %\vspace{0.5em}
+\pagebreak[3]
 \begin{rSection}{Work Experience}
 \begin{rSubsection}{Apple Inc. -- Hardware Test Engineering}{October 2013 - Present}{Electrical Engineer}{Cupertino, CA}
-\item Manage test vendors working on fast paced projects in order to provide test coverage for new product designs.
+\item Manage test vendors and contract manufacturers working on fast paced projects in order to provide test coverage for new product designs.
 \item Work with cross functional engineering teams and vendors to expedite the root cause of test line issues.
 \item Automate functional testing and data processing tasks using Python.
-\item Design and implement test plans for component and system level testing on upcoming iOS and accessory projects.
+\item Design and implement test plans for component and system level testing on new product introductions of iOS devices and accessories.
 \end{rSubsection}
 
 %----------------------------------------------------------------------------------------
 
 \begin{rSubsection2}{KLA-Tencor -- SensArray Group}{December 2011 - October 2013}{Electrical Engineer}{Milpitas, CA}
 
+\pagebreak[2]
 \begin{rWorkProject}{13.56MHz Displacement Current Calibration System}
 \item Improved existing resonant LC circuit calibration system by reducing the total DC resistance.
 \item Built a higher quality factor LC circuit with a Q of 500 using a silver plated inductor and capacitor.
-\item Designed and built a matching network to couple power into the higher Q inductor.
-\item Deisgned a 13.56MHz Class E amplifier for the higher Q system.
+\item Designed and built a matching network to couple power into the higher Q LC system's inductor.
+\item Designed a 13.56MHz Class E amplifier for the higher Q system.
 \end{rWorkProject}
 
+\pagebreak[2]
 \begin{rWorkProject}{RF Current Measurement Probe}
-\item Worked on the design of the RF current probe and the detector circuit.
-\item Developed firmware for an MSP430 to take differential measurements from the RF detector circuit.
+\item Worked on the design of the RF current probe and the RF detector circuit.
+\item Developed firmware for an MSP430 to take differential measurements from the RF detector circuit and store the results in flash memory on the MCU.
+\item Worked with a team to take the standalone design and integrate it into an existing measurement product for R\&D use at customer sites.
 \end{rWorkProject}
 
+\pagebreak[2]
 \begin{rWorkProject}{Automated Curve Tracer Fault Detector}
-\item Built a curve tracer using an Aglient U3606A power supply/DMM combo and an 34970A DMM and chasis.
-\item Wrote a LabView application to increase the compliance voltage while measuring the current, and to control the switch matrix in the 34970A.
-\item LabView application identified shorts between the silicon substrate and the thin film aluminum traces based on the shape and amplitude of the IV curve.
+\item Built a curve tracer using an Aglient U3606A power supply/DMM combo and an 34970A.
+\item Wrote a LabView application to increase the compliance voltage while measuring the current, and to control the switch matrix cards in the 34970A.
+\item LabView application identified shorts between the silicon substrate and the network of thin film aluminum traces.
+\item Faults were detected by my software based on the amplitude and shape of the IV curve.
 \end{rWorkProject}
 
+\pagebreak[2]
 \begin{rWorkProject}{Custom RFID System Improvements}
-\item Designed a band pass filter to isolate the 8120Hz data from the output of the enbvelope detector.
+\item Designed a band pass filter to select the 8120Hz data from the output of the RFID coil envelope detector.
 \item Built a proof of concept prototype using the band pass filter and a comparator to recover the digital data.
 \item Characterized the existing 1MHz RFID communication system in order to identify areas for improvement.
-\item Developed spice model of a newer thin film aluminum RFID antenna to predict the differences due to the distributed capacitance. 
+\item Developed spice model of a newer thin film aluminum RFID antenna to predict the differences due to the distributed capacitance.
 \end{rWorkProject}
 
+\pagebreak[2]
 \begin{rWorkProject}{High Density Plasma Chamber}
-\item Maintained legacy LabView based control software handling the machine safety and system automation.
-\item Diagnosed issues with the high vacuum systems used on the plasma chamber.
-\item Performed maintainance on the full system including the high voltage generator, RF generators 
+\item Maintained and updated legacy LabView control software handling the machine safety and system automation.
+\item Diagnosed issues with the control systems, high vacuum systems, and robotic stages used on the plasma chamber.
+\item Performed maintenance on the full system including the high voltage generator, RF generators, and matching networks.
 \end{rWorkProject}
 
+\pagebreak[2]
 \begin{rWorkProject}{Embedded Measurement System Shielding}
-\item Designed experiements to identify the primary interference sources.
-\item Built and tested experimental setups to test the shielding efficacy at from 1MHz up to 100MHz.
-\item Identified the primary methods of action 
+\item Designed experiments to identify the primary interference mechanisms.
+\item Built and tested experimental setups to measure the shielding efficacy from 1MHz up to 100MHz.
+\item Worked with a team of Electrical Engineers, Physicsts, and Materials Engineers to design shielding solutions that fit the existing system constraints.
 \end{rWorkProject}
 
-\begin{rWorkProject}{MSP430 DIO Pin Resistance Charactarization}
-\item Used LabView to control an Agilent U3606A to measure the digital output resistance of the 
-\end{rWorkProject}
+%\begin{rWorkProject}{}
+%\end{rWorkProject}
 
+%\begin{rWorkProject}{}
+%\end{rWorkProject}
 
 %\begin{rWorkProject}{}
 %\end{rWorkProject}
@@ -137,7 +147,7 @@ Programming Languages & Python, Matlab, C, LabView \smallskip \\
 \begin{rProject}{Class D Amplifier - SJSU EE124 Final Project}{2012}
 \item Designed a 10W class D amplifier using discrete components and operational amplifiers ICs.
 \item Built a 300kHz triangle wave generator in order to generate PWM from my audio with a comparator.
-\item Built a power mosfet output stage with gate driver and an LC low pass filter to drive the speaker.
+\item Built a power MOSFET output stage with gate driver and an LC low pass filter to drive the speaker.
 \item Realized my entire design on a breadboard and demonstrated my amplifier as my final project in my analog design class.
 \end{rProject}
 
@@ -148,17 +158,17 @@ Programming Languages & Python, Matlab, C, LabView \smallskip \\
 \end{rProject}
 
 \begin{rProject}{Formula Hybrid Vehicle Team - SJSU}{2010 - 2011}
-\item Developed battery management firmware for a PIC to perform pack safety monitoring and cell balancing.
+\item Developed and tested battery management firmware for a dsPIC30 to perform pack safety monitoring and cell balancing.
 \item Worked with teammates to debug their 10kW switching power converter stability and ringing issues.
-\item Managed the EE team, developed project time lines, and drove schedule.
-\item Presetned team progress updates to the Silicon Valley IEEE Chapter Meeting as part of their continued funding of our student project.
+\item Managed the EE team, developed project time lines, and drove schedules in order to meet our technical deadlines.
+\item Presented team progress updates to the Silicon Valley IEEE Chapter Meeting as part of their continued funding of our student project.
 \end{rProject}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-\pagebreak[3]
+\pagebreak[2]
 \begin{rSection}{Education}
 
 {\bf San Jose State University} \hfill {\em December 2011} \\ 

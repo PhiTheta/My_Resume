@@ -91,8 +91,9 @@
   \sectionskip
   %\vspace{0em} % Some space after the list of bullet points
   \MakeUppercase{\bf #1} % Section title
-  \sectionlineskip
+  %\sectionlineskip
   %\hrule % Horizontal line
+  \vspace{-0.2em}
   \begin{list}{$\cdot$}{ % List for each individual item in the section
     \setlength{\leftmargin}{1.5em} % Margin within the section
   }
@@ -116,7 +117,7 @@
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  \vspace{0.25em} % Some space after the list of bullet points
 }
 
 % No DASH!!!
@@ -130,7 +131,7 @@
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  \vspace{0.25em} % Some space after the list of bullet points
 }
 
 
@@ -145,7 +146,7 @@
    \renewcommand{\labelitemi}{-}
   }{
   \end{itemize}
-  \vspace{0.5em} % Some space after the list of bullet points
+  \vspace{0.25em} % Some space after the list of bullet points
 }
 
 %----------------------------------------------------------------------------------------
