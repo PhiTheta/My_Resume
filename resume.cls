@@ -28,6 +28,8 @@
 
 \pagestyle{empty} % Suppress page numbers
 
+\renewcommand*{\familydefault}{\rmdefault}
+
 %----------------------------------------------------------------------------------------
 %	HEADINGS COMMANDS: Commands for printing name and address
 %----------------------------------------------------------------------------------------
@@ -88,11 +90,12 @@
 
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
-  %\sectionskip
+  \sectionskip
   %\vspace{0em} % Some space after the list of bullet points
   \MakeUppercase{\bf #1} % Section title
   %\sectionlineskip
   %\hrule % Horizontal line
+  \vspace{-0.2em}
   \begin{list}{$\cdot$}{ % List for each individual item in the section
     \setlength{\leftmargin}{1.5em} % Margin within the section
   }
@@ -116,7 +119,7 @@
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  \vspace{0.25em} % Some space after the list of bullet points
 }
 
 % No DASH!!!
@@ -130,21 +133,22 @@
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  \vspace{0.25em} % Some space after the list of bullet points
 }
 
 
 %----------------------------------------------------------------------------------------
 %	WORK PROJECT FORMATTING
 %----------------------------------------------------------------------------------------
-\newenvironment{rWorkProject}[1]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} %\hfill {#2} % Bold Project name
-  \smallskip
-  \begin{list}{}{\leftmargin=1em} % \cdot used for bullets, some indentation
+\newenvironment{rWorkProject}[1]{ % 1 input argument - Project Name
+ {\item #1} % Make it a list item in the parent list
+  %\smallskip
+  \begin{itemize}{\leftmargin=1em} % dash used for bullets, some indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+   \renewcommand{\labelitemi}{-}
   }{
-  \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  \end{itemize}
+  \vspace{0.25em} % Some space after the list of bullet points
 }
 
 %----------------------------------------------------------------------------------------
@@ -152,12 +156,13 @@
 %----------------------------------------------------------------------------------------
 \newenvironment{rProject}[2]{
  {\bf #1} \hfill {\em #2}
-  \smallskip
+  \pagebreak[2]
+  %\smallskip
   \begin{list}{-}{\leftmargin=2em} % dash used for bullets, some indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  %\vspace{0.5em} % Some space after the list of bullet points
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
