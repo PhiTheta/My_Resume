@@ -35,42 +35,35 @@
 \hyphenpenalty=100000
 
 %----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-%\pagebreak
-\begin{rSection}{Technical Strengths}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Design Experience & High Precision Analog Measurement and Design, PCB Layout \\
-& Verilog, I2C, SPI, JTAG, RF Matching Network \& Amplifiers Design\smallskip \\
-
-Lab Skills & Experienced with Oscilloscopes, Network Analyzers, 4Wire LCR Meters\\
-& Multimeters, Root Cause Analysis, SMD Soldering, Prototyping \smallskip \\
-
-Software Tools & JMP, Spice, AWR Microwave Office, CADSoft Eagle, IAR\\ 
- & Code Composer Studio, Eclipse, Git, SVN \smallskip \\
-
-Programming Languages & Python, Matlab, C, LabView \smallskip \\ 
-
-\end{tabular}
-
-\end{rSection}
-\smallskip
-
-%----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Work Experience}
 \begin{rSubsection}{Apple Inc. -- Hardware Test Engineering}{October 2013 - Present}{Electrical Engineer}{Cupertino, CA}
-\item Manage test vendors and contract manufacturers working on fast paced projects in order to provide test coverage for new product designs.
+\item Manage test vendors and contract manufacturers to provide comprehensive test coverage for new product designs.
+\item Design and implement test plans for system level testing on new product introductions of iOS devices and accessories.
 \item Work with cross functional engineering teams and vendors to expedite the root cause of test line issues.
 \item Automate functional testing and data processing tasks using Python.
-\item Design and implement test plans for component and system level testing on new product introductions of iOS devices and accessories.
 \end{rSubsection}
 
 %----------------------------------------------------------------------------------------
 
 \begin{rSubsection2}{KLA-Tencor -- SensArray Group}{December 2011 - October 2013}{Electrical Engineer}{Milpitas, CA}
+
+\pagebreak[2]
+\begin{rWorkProject}{Automated Curve Tracer Fault Detector}
+\item Built a curve tracer using an Aglient U3606A power supply and multimeter combination and a 34970A mulitfunction meter.
+\item Wrote a LabView application to sweep the compliance voltage, measure the current draw, and control the switch matrix cards.
+\item The LabView application identified shorts between the silicon substrate and the network of thin film aluminum traces based on the peak current draw and the shape of the IV curve.
+\end{rWorkProject}
+
+\pagebreak[1]
+\begin{rWorkProject}{Custom RFID System Improvements}
+\item Characterized the existing 1MHz RFID communication system in order to identify areas for improvement.
+\item Designed a band pass filter to select the 8kHz data from the output of the RFID coil envelope detector.
+\item Built a proof of concept circuit with my band pass filter and a comparator to recover the digital data.
+\item My design improved the bit error rate of the system by improving the selectivity of the detector.
+\item Developed spice model of a newer thin film aluminum RFID antenna to predict the differences due to the distributed capacitance.
+\end{rWorkProject}
 
 \pagebreak[2]
 \begin{rWorkProject}{13.56MHz Displacement Current Calibration System}
@@ -85,22 +78,6 @@ Programming Languages & Python, Matlab, C, LabView \smallskip \\
 \item Worked on the design of an RF E-Field probe and detector circuit to measure field uniformity.
 \item Developed firmware for an MSP430 to take differential measurements from the RF envelope detector circuit and store the results in flash memory on the MCU.
 \item Worked with the senior electrical engineer, materials engineers, and packaging engineers to take the standalone design and integrate it into an existing measurement product for R\&D use at customer sites.
-\end{rWorkProject}
-
-\pagebreak[1]
-\begin{rWorkProject}{Custom RFID System Improvements}
-\item Characterized the existing 1MHz RFID communication system in order to identify areas for improvement.
-\item Designed a band pass filter to select the 8kHz data from the output of the RFID coil envelope detector.
-\item Built a proof of concept circuit with my band pass filter and a comparator to recover the digital data.
-\item My design improved the bit error rate of the system by improving the selectivity of the detector.
-\item Developed spice model of a newer thin film aluminum RFID antenna to predict the differences due to the distributed capacitance.
-\end{rWorkProject}
-
-\pagebreak[2]
-\begin{rWorkProject}{Automated Curve Tracer Fault Detector}
-\item Built a curve tracer using an Aglient U3606A power supply and multimeter combination and a 34970A mulitfunction meter.
-\item Wrote a LabView application to sweep the compliance voltage, measure the current draw, and control the switch matrix cards.
-\item The LabView application identified shorts between the silicon substrate and the network of thin film aluminum traces based on the peak current draw and the shape of the IV curve.
 \end{rWorkProject}
 
 \pagebreak[1]
@@ -156,6 +133,29 @@ Programming Languages & Python, Matlab, C, LabView \smallskip \\
 \item Presented team progress updates to the Silicon Valley IEEE Chapter Meeting as part of their continued funding of our student team.
 \end{rProject}
 \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+%\pagebreak
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Design Experience & High Precision Analog Measurement and Design, PCB Layout \\
+& Verilog, I2C, SPI, JTAG, RF Matching Network \& Amplifiers Design\smallskip \\
+
+Lab Skills & Experienced with Oscilloscopes, Network Analyzers, 4Wire LCR Meters\\
+& Multimeters, Root Cause Analysis, SMD Soldering, Prototyping \smallskip \\
+
+Software Tools & JMP, Spice, AWR Microwave Office, CADSoft Eagle, IAR\\ 
+ & Code Composer Studio, Eclipse, Git, SVN \smallskip \\
+
+Programming Languages & Python, Matlab, C, LabView \smallskip \\ 
+
+\end{tabular}
+
+\end{rSection}
+\smallskip
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
